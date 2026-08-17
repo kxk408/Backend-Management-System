@@ -18,12 +18,12 @@ release.properties
 
 # Logs
 *.log
-D:/tlias-*.log
+D:/kxk-*.log
 
 # Local env / secrets
 *.env
 .env.*
-tlias-web-management/src/main/resources/application.yml
+kxk-web-management/src/main/resources/application.yml
 
 # Local auth helper leftovers
 .gh-auth-*.txt
