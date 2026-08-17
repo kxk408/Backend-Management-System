@@ -1,0 +1,32 @@
+spring:
+  application:
+      name: backend-management-system
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/backend_management_system
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: your_mysql_password
+
+  # Redis：本地默认 6379，无密码；有密码时取消 password 注释
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      # password:
+      database: 0
+      timeout: 3s
+
+mybatis:
+  configuration:
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+      map-underscore-to-camel-case: true
+
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
+
+# 密码安全：首次把库中明文刷成 BCrypt 时设为 true，迁移成功后务必改回 false
+backend:
+  security:
+    migrate-plaintext-password: false

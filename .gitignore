@@ -18,12 +18,12 @@ release.properties
 
 # Logs
 *.log
-D:/kxk-*.log
+D:/backend-management-*.log
 
 # Local env / secrets
 *.env
 .env.*
-kxk-web-management/src/main/resources/application.yml
+backend-management-system/src/main/resources/application.yml
 
 # Local auth helper leftovers
 .gh-auth-*.txt
